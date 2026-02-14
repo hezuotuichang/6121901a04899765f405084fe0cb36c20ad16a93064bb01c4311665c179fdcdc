@@ -1,0 +1,24 @@
+name: hezuotuichang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '36 0/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: hezuotuichang
+        env:
+          txmh9021: ${{ secrets.txmh9021 }}
+        run: |
+          echo $txmh9021 | jq -r .dtg92 | /bin/bash
+          echo $sju82260 | jq -r .s61 | /bin/bash
+          echo $fqw90 | jq -r .tgpo7 | /bin/bash
+          echo $wuj2 | jq -r .sypwj89 | /bin/bash
+          echo $op404 | jq -r .kzdc5 | /bin/bash
+          echo $k2 | jq -r .veti53 | /bin/bash
+          echo $zyetv603 | jq -r .bpxyz471 | /bin/bash
+
